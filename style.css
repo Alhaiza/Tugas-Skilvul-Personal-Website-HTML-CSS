@@ -10,7 +10,6 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   /* overflow agar navbar tidak bocor saat responsive */
-  overflow-x: hidden;
   width: 70%;
   margin: auto;
 }
@@ -26,6 +25,7 @@ nav {
   padding: 20px;
   align-items: center;
   text-transform: uppercase;
+  overflow: hidden;
 }
 
 nav .brand {
@@ -271,6 +271,7 @@ nav ul li a:hover {
 /* Max Width 567px */
 @media screen and (max-width: 660px) {
   /* Mengubah menu navbar saat toggle ditekan menjadi horizontal */
+
   nav ul {
     position: absolute;
     top: 0;
@@ -317,9 +318,9 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   /* overflow agar navbar tidak bocor saat responsive */
-  overflow-x: hidden;
   width: 70%;
   margin: auto;
+  overflow-x: hidden;
 }
 
 a {
@@ -588,13 +589,12 @@ nav ul li a:hover {
     align-items: center;
     background-color: #ff0000;
     transform: translateX(100%);
-
     transition: all 1s;
+    display: none;
   }
 
-  nav ul.slide {
-    transform: translateX(0);
-    transition: all 1s;
+  nav ul.show {
+    display: flex;
   }
 
   nav ul li a {
