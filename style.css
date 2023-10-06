@@ -563,6 +563,7 @@ nav ul li a:hover {
 
   .hero-image img {
     height: auto;
+    width: 250px;
   }
 
   .cards {
